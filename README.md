@@ -1,3 +1,3 @@
-https://laurentbom.github.io/avana/
+https://laurentbom.github.io/avanaa/
 # avana
 Educational work copy website
