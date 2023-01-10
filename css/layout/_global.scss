@@ -1,0 +1,37 @@
+body{
+  background-color: #f6f6f6;
+  font-family: $font;
+}
+// Wrapper contenu
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+// Mise en forme
+::selection {
+  background-color: #fb5353;
+  color: #fff;
+  text-shadow: none;
+}
+h1{
+  font-size: 80px;
+  font-weight: 800;
+  color: $orange;
+  margin: 0;
+}
+h2{
+  font-size: 46px;
+  font-weight: 800;
+  color: $gris1;
+  margin: 0;
+}
+// Tailles colonnes
+.col{
+  width: calc(50% - 10px);
+}
+// Images work prennent 100% container
+.work-pic img{
+  width: 100%;
+}

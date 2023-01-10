@@ -1,0 +1,53 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 100px 0;
+  img{
+    padding: 30px 0;
+  }
+  small{
+    color: $gris2;
+    opacity: 0.8;
+    font-size: 12px;
+  }
+  .footer-nav{
+    padding: 30px 0;
+  }
+  .footer-social-nav{
+    padding: 30px 0;
+  }
+}
+// Mise en forme liens
+.footer-nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $gris2;
+  opacity: 0.8;
+  font-size: 15px;
+  transition: 0.3s all ease-in-out;
+}
+.footer-nav a:not(:last-child){
+  margin-right: 26px;
+}
+.footer-nav a:hover{
+  color: $orange;
+}
+
+// Mise en forme logo socials media
+.footer-social-nav{
+  a{
+    color: $gris2;
+    opacity: 0.8;
+    font-size: 40px;
+    transition: 0.3s all ease-in-out;
+  }
+  a:not(:last-child){
+    margin-right: 26px;
+  }
+  a:hover{
+    color: $orange;
+  }
+}

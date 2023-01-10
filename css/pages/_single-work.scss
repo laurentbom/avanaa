@@ -1,0 +1,59 @@
+// Partie 1 Titre et Texte
+.sw-1{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  .sw-1-titre{
+    width: 40%;
+    a{
+      text-decoration: none;
+      color: $orange;
+      font-size: 18px;
+      font-weight: 600;
+      transition: .3s all ease-in-out;
+      padding-left: 20px;
+    }
+    i{
+      color: $gris1;
+      padding-left: 10px;
+      transition: .3s all ease-in-out;
+    }
+    h2{
+      padding: 40px 20px 20px;
+      font-size: 36px;
+      font-weight: 800;
+    }
+  }
+  .sw1-txt{
+    width: 60%;
+    p{
+      color: #666666;
+      line-height: 30px;
+      font-weight: 100;
+      font-size: 16px;
+    }
+  }
+}
+.sw1-titre-hov:hover{
+  a{
+    color: $gris1;
+  }
+  i{
+    color: $orange;
+  }
+}
+// Connection Partie 1 et 2
+.single-work-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Partie 2 Images
+.sw2 img{
+  width: 100%;
+  display: block;
+  margin: 30px;
+}

@@ -1,0 +1,80 @@
+.contact-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // Partie Dessus
+  .contact-titre{
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 40px;
+    a{
+      text-decoration: none;
+      color: $gris1;
+      font-size: 20px;
+      padding-right: 35px;
+      padding-top: 30px;
+      display: inline-block;
+      transition: 0.3s all ease-in-out;
+      &:hover{
+        color: $orange
+      }
+    }
+  }
+  .contact-map{
+    width: 50%;
+    iframe{
+      width: 100%;
+    }
+  }
+}
+// Partie dessous
+.contact-form{
+  padding: 100px 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  textarea{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $gris2;
+    min-height: 100px;
+    padding: 50px 0px;
+    outline: none;
+    &::placeholder{
+      color: $gris2;
+      font-size: 21px;
+    }
+  }
+  input:not(:last-child){
+    width: 48%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $gris2;
+    padding-bottom: 20px;
+    outline: none;
+    &::placeholder{
+      color: $gris2;
+      font-size: 21px;
+      
+    }
+  }
+  input:last-child{
+    background-color: $orange;
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    &:hover{
+      background-color: lighten($orange, 5%);
+    }
+  }
+}

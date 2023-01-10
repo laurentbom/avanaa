@@ -1,0 +1,206 @@
+// Partie 1 Titre et texte
+.about1{
+  display: flex;
+  div{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .about1-titre p{
+    font-size: 20px;
+    line-height: 30px;
+    color: $gris1;
+  }
+  .about1-txt{
+    background-color: $orange;
+    padding: 60px;
+    p{
+      font-size: 17px;
+      line-height: 30px;
+      color: white;
+    }
+  }
+}
+.about1-titre{
+  padding-left: 50px;
+  padding-right: 20px;
+
+}
+// Partie 2 Photos membres
+.about2{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  figure{
+    margin: 0;
+  }
+  div{
+    width: calc((100% / 3) - 20px);
+  }
+  img{
+    width: 100%;
+    transition: .5s all ease-in-out;
+  }
+}
+// Effets de survol
+
+.about2 figure{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+// Image 1
+// Zoom
+.about2-img1:hover img{
+  transform: scale(1.2);
+}
+.about2-img1 figure:after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $orange;
+  z-index: 10;
+  opacity: 0;
+  transition: .4s all ease
+}
+.about2-img1:hover figure:after{
+  opacity: 0.6;
+}
+// Texte montant
+.about2-img1 a{
+  position: relative;
+  transition: .3s all ease-in-out;
+  div{
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,100%);
+    color: white;
+    background-color: $orange;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+    strong{
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    span{
+      font-size: 21px;
+    }
+  }
+}
+.about2-img1:hover a div{
+  transform: translate(-50%,5%);
+  z-index: 11;
+}
+// Image 2
+// Zoom
+.about2-img2:hover img{
+  transform: scale(1.2);
+}
+.about2-img2 figure:after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $orange;
+  z-index: 10;
+  opacity: 0;
+  transition: .4s all ease
+}
+.about2-img2:hover figure:after{
+  opacity: 0.6;
+}
+// Texte montant
+.about2-img2 a{
+  position: relative;
+  transition: .3s all ease-in-out;
+  div{
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,100%);
+    color: white;
+    background-color: $orange;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+    strong{
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    span{
+      font-size: 21px;
+    }
+  }
+}
+.about2-img2:hover a div{
+  transform: translate(-50%,5%);
+  z-index: 11;
+}
+// Image 3
+// Zoom
+.about2-img3:hover img{
+  transform: scale(1.2);
+}
+.about2-img3 figure:after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $orange;
+  z-index: 10;
+  opacity: 0;
+  transition: .4s all ease
+}
+.about2-img3:hover figure:after{
+  opacity: 0.6;
+}
+// Texte montant
+.about2-img3 a{
+  position: relative;
+  transition: .3s all ease-in-out;
+  div{
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,100%);
+    color: white;
+    background-color: $orange;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+    strong{
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    span{
+      font-size: 21px;
+    }
+  }
+}
+.about2-img3:hover a div{
+  transform: translate(-50%,5%);
+  z-index: 11;
+}
